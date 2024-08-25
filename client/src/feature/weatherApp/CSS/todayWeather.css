@@ -1,0 +1,215 @@
+.container {
+    background-color: #DDE4E6;
+    width: 100%;
+    max-width: 750px;
+    height: 660px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-weather {
+    background-color: #27737D;
+    border-radius: 30px;
+    width: 65%;
+    height: 80%;
+}
+
+
+
+.city {
+    color: #E8F1F2;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+.country {
+    color: #A8C6CB;
+    font-weight: 300;
+    font-size: 22px;
+    text-align: center;
+    margin: -9px;
+
+}
+
+.date-time {
+    color: #A8C6CB;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.temp-condition-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp-c {
+    height: 110px;
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 130px;
+    text-align: center;
+    margin: 0 0 0 11%;
+}
+
+.condition {
+    color: #E8F1F2;
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+}
+
+.data-table {
+    width: 90%;
+    margin-left: 4%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.data-table th {
+    color: #E8F1F2;
+    font-weight: 200;
+
+}
+
+.data-table td {
+    color: #FFFFFF;
+    font-weight: 500;
+
+}
+
+
+.temperature-by-hour-table {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.temperature-by-hour-table th {
+    color: #A8C6CB;
+    font-weight: 200;
+}
+
+.temperature-by-hour-table td {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+@media (min-width: 870px) and (max-width: 1150px) {
+
+    .city {
+        font-size: 24px;
+        margin-top: 40px;
+        margin-bottom: 0;
+    }
+
+    .country {
+        font-size: 20px;
+        margin: -9px;
+
+    }
+
+    .date-time {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .temp-c {
+        font-size: 124px;
+    }
+
+    .condition {
+        font-size: 26px;
+    }
+
+    .data-table {
+        margin-left: 6%;
+        font-size: 17px;
+    }
+
+
+    .temperature-by-hour-table {
+        font-size: 16px;
+        margin-top: 15%;
+    }
+
+
+}
+
+@media (min-width:779px) and (max-width: 869px) {
+    .data-table {
+        margin-left: 6%;
+        font-size: 15px;
+    }
+
+
+    .temperature-by-hour-table {
+        font-size: 14px;
+        margin-top: 15%;
+    }
+
+
+
+}
+
+
+@media (max-width: 430px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+        height: 400px;
+    }
+
+    .city {
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    .country {
+        font-size: 16px;
+        margin: -9px;
+
+    }
+
+    .date-time {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .temp-c {
+        font-size: 60px;
+
+    }
+
+    .condition {
+        font-size: 22px;
+        margin-top: -44px;
+    }
+
+
+    .data-table {
+        margin-left: 6%;
+        font-size: 13px;
+        margin-bottom: 0;
+    }
+
+
+    .temperature-by-hour-table {
+        font-size: 13px;
+        margin-top: 10%;
+
+    }
+
+    
+
+
+}

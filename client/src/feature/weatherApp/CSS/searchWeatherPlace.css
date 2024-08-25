@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+body {
+    font-family: "Heebo", sans-serif;
+    background-color: #F1F1F1;
+    padding: 4%;
+}
+
+.div-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "search todayWeather";
+    gap: 30px;
+}
+
+
+.today-weather-div {
+    grid-area: todayWeather;
+    display: flex;
+    justify-content: center;
+}
+
+.left-side {
+    grid-area: search;
+}
+
+.img-style {
+    margin-bottom: 3%;
+}
+
+.search-div {
+    padding-left: 13%;
+}
+
+.paragraph-text {
+    line-height: 44px;
+    font-size: 30px;
+    text-align: left;
+    color: #707070;
+    font-weight: 300;
+    margin-top: 45px;
+
+}
+
+.input-button-lable-div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.lable-style {
+    padding-left: 1%;
+    margin-bottom: 1%;
+    font-size: 16px;
+    color: #707070;
+    line-height: 22px;
+    opacity: 1;
+}
+
+.div-input-button-style {
+    position: relative;
+    min-width: 150px;
+    height: 63px;
+}
+
+.input-style {
+    border-radius: 10px;
+    width: 90%;
+    height: 100%;
+    border: 1px solid transparent;
+    font-size: 22px;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
+    padding-left: 3.5%;
+}
+
+.button-style {
+    font-family: "Heebo", sans-serif;
+    font-weight: 100;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    border: 1px solid transparent;
+    background-color: #046B3B;
+    min-width: 95px;
+    height: 36px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 18px;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.button-style:hover {
+    background-color: #03532e;
+}
+
+.button-style:active {
+    transform: translateY(2px);
+
+}
+
+.down-text {
+    color: #707070;
+    font-size: 14px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    line-height: 0%;
+    padding-left: 7%;
+    margin-top: 240px;
+
+}
+
+.lat-long-style {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+.err-message {
+    color: #e41010;
+    font-size: small;
+    padding-left: 1%;
+    display: block;
+}
+
+
+
+@media (min-width: 870px) and (max-width: 1150px) {
+
+    .paragraph-text {
+        line-height: 44px;
+        font-size: 26px;
+    }
+}
+
+@media (min-width:779px) and (max-width: 869px) {
+
+    .paragraph-text {
+        font-size: 26px;
+    }
+
+    .div-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas: "search todayWeather";
+        gap: 30px;
+    }
+}
+
+@media (max-width: 780px) {
+    .paragraph-text {
+        font-size: 26px;
+    }
+
+    .div-container {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .down-text {
+       display: none;
+
+    }
+}
+
+@media (max-width: 430px) {
+    .paragraph-text {
+        font-size: 22px;
+    }
+
+    .div-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .down-text {
+        display: none;
+
+    }
+
+
+}
